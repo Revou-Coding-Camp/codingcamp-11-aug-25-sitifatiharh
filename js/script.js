@@ -1,5 +1,3 @@
-welcomeSpeech();
-
 // Call the welcomeSpeech function when the page loads
 function welcomeSpeech() {
     let userName = prompt("Please enter your name:");
@@ -7,6 +5,7 @@ function welcomeSpeech() {
         document.getElementById('user-greeting').textContent = userName;
     }
 }
+welcomeSpeech();
 
 function sendMessage() {
     let message = document.getElementById('message').value;
