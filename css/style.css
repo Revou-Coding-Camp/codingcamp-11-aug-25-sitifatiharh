@@ -1,4 +1,265 @@
-.main-logo {
+body {
+    font-family: sans-serif;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #f3f4f6; 
+}
+
+/* Logo Icon */
+.logo-icon {
+    background-color: #6b7280; 
     background-image: url(https://media.licdn.com/dms/image/v2/D5603AQGUuEPilca4mA/profile-displayphoto-scale_200_200/B56ZhkdzpAG4Ag-/0/1754032194477?e=1758153600&v=beta&t=umnYOIPWVntyS5cKouWwZqeuV26l8FzIR-lnzJ25MbA);
-    background-size: cover;
+    background-size: contain;
+    border-radius: 9999px; 
+    height: 50px;
+    width: 50px;
+}
+
+/* Navigasi */
+.main-nav {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    color: #6b7280; 
+    border: 1px solid #d1d5db; 
+    padding: 4px 8px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+}
+
+.nav-link:hover {
+    color: #3b82f6; 
+}
+
+/* Garis Pisah (hr) */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #d1d5db; 
+}
+
+/* Section Umum */
+section {
+    background-color: #f3f4f6; 
+}
+
+/* Home Section */
+.home-section {
+    height: 400px;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-title {
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    color: #4b5563; 
+}
+
+/* My Profile & Portfolio Sections */
+.profile-section {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    color: #4b5563; 
+    text-align: center;
+}
+
+.section-text {
+    color: #4b5563;
+    text-align: justify;
+}
+
+/* Project Cards Conteiner */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 24px; 
+    padding: 24px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: white; 
+    border: 1px solid #d1d5db; 
+    border-radius: 8px; 
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px); 
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4b5563;
+}
+
+.project-desc {
+    color: #4b5563; 
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.project-tech {
+    font-style: italic;
+    color: #6b7280; 
+    margin-bottom: 16px;
+}
+
+.project-link {
+    display: inline-block; 
+    background-color: #3b82f6; 
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #2563eb;
+}
+
+/* Message Me Section */
+.message-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}
+
+.form-label {
+    color: #4b5563; 
+}
+
+.form-input,
+.form-input-textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 16px;
+}
+
+.submit-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #2563eb; 
+}
+
+/* Message output */
+.message-output-container {
+    background-color: #e2e8f0; 
+    border: 1px solid #cbd5e0; 
+    border-radius: 8px; 
+    padding: 16px; 
+    margin-top: 16px; 
+}
+
+.message-output-container h3 {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
+}
+
+.message-output-container p {
+    margin: 4px 0; 
+}
+
+.message-output-container strong {
+    font-weight: 600;
+}
+
+/* Footer */
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #f3f4f6; 
+}
+
+.main-footer span {
+    text-align: center;
+}
+
+
+/* === Responsive Design: Mobile === */
+@media (max-width: 767px) {
+    .main-header {
+        flex-direction: column; 
+        padding: 12px;
+    }
+    
+    .main-nav {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        gap: 8px;
+        margin-top: 12px;
+    }
+    
+    .main-title,
+    .section-title {
+        font-size: 1.75rem; 
+    }
+
+    .profile-content {
+        flex-direction: column; 
+    }
+
+    .project-card {
+        width: 100%; 
+    }
+    
+    .projects-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .form-container {
+        padding: 8px;
+    }
 }

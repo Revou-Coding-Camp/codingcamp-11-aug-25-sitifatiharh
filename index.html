@@ -3,104 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Fatiha</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css\style.css">
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portfolio Siti Fatiha Rahmah</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Main Header -->
-    <header class="flex items-center justify-between p-4 bg-gray-100 p-[16px]">
-        <!-- Logo Icon -->
-        <div class="bg-gray-500 rounded-full h-[50px] w-[50px] main-logo"></div>
-
+    <header class="main-header">
+        <div class="logo-icon"></div>
         <nav>
-            <ul class="flex gap-[4px]">
-                <li><a href="#home-page" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Home</a></li>
-                <li><a href="#our-profile" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Our Profile</a></li>
-                <li><a href="#portfolio" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Portfolio</a></li>
-                <li><a href="#message-us" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Message Us</a></li>
+            <ul class="main-nav">
+                <li><a href="#home-page" class="nav-link">Home</a></li>
+                <li><a href="#my-profile" class="nav-link">My Profile</a></li>
+                <li><a href="#portfolio" class="nav-link">Project</a></li>
+                <li><a href="#message-me" class="nav-link">Message Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- garis pisah -->
-    <hr />
+    <hr class="divider" />
 
-    <!-- Main Content -->
     <main>
-        <!-- Home -->
-        <section id="home-page" class="h-[400px] bg-gray-100">
-            <div class="flex items-center justify-center h-full">
-                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting"></span> to Portfolio Fatiha</h1>
+        <section id="home-page" class="home-section">
+            <div class="section-container">
+                <h1 class="main-title">Welcome <span id="user-greeting"></span> to Portfolio Siti Fatiha Rahamh</h1>
             </div>
         </section>
 
-        <hr />
+        <hr class="divider" />
 
-        <!--Our Profile -->
-        <section id="our-profile" class="text-center h-[400px] bg-gray-100">
+        <section id="my-profile" class="profile-section">
             <header>
-                <h1 class="text-4xl font-bold text-gray-800">Our Profile</h1>
+                <h1 class="section-title">About Me</h1>
             </header>
-
-            <p class="text-gray-600">I'm a student</p>
+            <p class="section-text">
+                Halo! Nama saya Siti  Rahmah Fatiha, seorang  mahasiswa aktif semester 7 di Universitas Esa Unggul, 
+                Fakultas Ilmu Komputer dengan Program Studi Teknik Informatika. 
+                Saya memiliki minat besar dalam pemrograman front-end dan back-end development.
+                Saya selalu antusias untuk belajar teknologi baru dan berkontribusi pada proyek yang menantang.
+            </p>
+            <p class="section-text">
+                Saya percaya bahwa kesuksesan sebuah proyek tidak hanya bergantung pada kemampuan teknis, 
+                tetapi juga pada sinergi tim. Oleh karena itu, saya selalu berusaha untuk menjadi anggota tim 
+                yang dapat diandalkan, disiplin, dan mudah beradaptasi dengan setiap perubahan. 
+                Saya sangat menikmati proses kolaborasi, bertukar ide, dan bekerja sama untuk mencapai tujuan bersama.
+                Dengan bekal pengetahuan dan semangat yang saya miliki, saya termotivasi untuk terus mengasah keterampilan teknis saya. Saya berharap dapat memiliki kesempatan untuk berkontribusi secara nyata dalam mengembangkan solusi dan proyek teknologi di perusahaan Anda.
+            </p>
         </section>
 
-        <hr />
+        <hr class="divider" />
 
-        <!-- Portfolio -->
-        <section id="portfolio" class="text-center h-[400px] bg-gray-100">
-            <heade>
-                <h1 class="text-4xl font-bold text-gray-800">Portfolio</h1>
+        <section id="portfolio" class="portfolio-section">
+            <header>
+                <h1 class="section-title">Project</h1>
             </header>
-            
-            <p class="text-gray-600">I'm a port</p>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3 class="project-title">Fan Forum</h3>
+                    <p class="project-desc">
+                        A web application for the EXO Cafe, serving as a community platform for fans. T
+                        he site features a social-style forum for users to post with images and comments. 
+                        It includes user profiles and an admin panel to manage cafe content and member profiles, aiming to boost fan engagement.
+                    </p>
+                    <p class="project-tech">
+                        <strong>Technologies:</strong> PHP, MySQL, HTML, CSS, JavaScript
+                    </p>
+                    <a href="https://github.com/sitifatiharh/fan-forum-project" class="project-link">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Sentiment Analysis</h3>
+                    <p class="project-desc">
+                        This project aims to analyze public sentiment in Indonesia on X (formerly Twitter)
+                        regarding the 32% import tariff policy imposed by the United States President Donald Trump 
+                        on Indonesian products. Two main approaches are compared: SVM with TF-IDF and BiLSTM with FastText.
+                    </p>
+                    <p class="project-tech">
+                        <strong>Technologies:</strong> Python, Pandas, Numpy, Scikit-learn, TensorFlow
+                    </p>
+                    <a href="https://github.com/sitifatiharh/sentiment-analysis-import-trump" class="project-link">View on GitHub</a>
+                </div>
+            </div>
         </section>
 
-        <hr />
+        <hr class="divider" />
 
-        <!-- Message Us -->
-        <section id="message-us" class="h-[500px] bg-gray-100">
+        <section id="message-me" class="message-section">
             <header>
-                <h1 class="text-4xl font-bold text-gray-800">Message Us</h1>
+                <h1 class="section-title">Message Me</h1>
             </header>
-
             <form>
-                <div class="flex flex-col gap-[8px] p-[16px]">
-                    <label for="name" class="text-gray-600">Nama:</label>
-                    <input type="text" id="name" name="name" class="border rounded-[8px] p-[8px]" placeholder="Masukkan nama">
+                <div class="form-container">
+                    <label for="name" class="form-label">Nama:</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama">
 
-                    <label for="birthdate" class="text-gray-600">Tanggal Lahir:</label>
-                    <input type="date" id="birthdate" name="name" class="border rounded-[8px] p-[8px]">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Masukkan email">
 
-                    <label>Jenis Kelamin:</label>
-                    <div class="flex gap-[16px]">
-                        <input type="radio" id="laki-laki" name="gender" value="laki-laki">
-                        <label for="laki-laki" class="text-gray-600">Laki-laki</label>
-            
-                        <input type="radio" id="perempuan" name="gender" value="perempuan">
-                        <label for="perempuan" class="text-gray-600">Perempuan</label>
-                    </div>
+                    <label for="telp" class="form-label">Nomor Telepon:</label>
+                    <input type="number" id="telp" name="telp" class="form-input" placeholder="Masukkan nomor telepon">
                     
-                    <label for="message" class="text-gray-600">Pesan:</label>
-                    <textarea id="message" name="message" class="border rounded-[8px] p-[8px]" rows="4" placeholder="Tulis pesan"></textarea>
+                    <label for="message" class="form-label">Pesan:</label>
+                    <textarea id="message" name="message" class="form-input-textarea" rows="4" placeholder="Tulis pesan"></textarea>
 
-                    <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white py-[8px] px-[16px] rounded-[8px] hover:bg-blue-600">Submit</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </div>
             </form>
+            <div id="message-output" class="message-output-container"></div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="flex items-center justify-center p-4 bg-gray-100">
-        <span>&copy; 2025 Portfolio Fatiha. All rights reserved.</span>
+    <footer class="main-footer">
+        <span>&copy; 2025 Portfolio Siti Fatiha Rahmah. All rights reserved.</span>
     </footer>
     
-    <!-- JS External -->
-    <script src="js\script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
