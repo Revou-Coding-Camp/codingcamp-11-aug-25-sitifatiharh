@@ -1,4 +1,4 @@
-// welcomeSpeech();
+welcomeSpeech();
 
 // Call the welcomeSpeech function when the page loads
 function welcomeSpeech() {
