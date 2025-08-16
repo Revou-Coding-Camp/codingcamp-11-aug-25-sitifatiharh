@@ -13,14 +13,92 @@
 </head>
 <body>
     <!-- Main Header -->
-    <header></header>
+    <header class="flex items-center justify-between p-4 bg-gray-100 p-[16px]">
+        <!-- Logo Icon -->
+        <div class="bg-gray-500 rounded-full h-[50px] w-[50px] main-logo"></div>
+
+        <nav>
+            <ul class="flex gap-[4px]">
+                <li><a href="#home-page" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Home</a></li>
+                <li><a href="#our-profile" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Our Profile</a></li>
+                <li><a href="#portfolio" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Portfolio</a></li>
+                <li><a href="#message-us" class="text-gray-500 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-500">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- garis pisah -->
+    <hr />
 
     <!-- Main Content -->
     <main>
+        <!-- Home -->
+        <section id="home-page" class="h-[400px] bg-gray-100">
+            <div class="flex items-center justify-center h-full">
+                <h1 class="text-4xl font-bold text-gray-800">Welcome <span id="user-greeting"></span> to Portfolio Fatiha</h1>
+            </div>
+        </section>
+
+        <hr />
+
+        <!--Our Profile -->
+        <section id="our-profile" class="text-center h-[400px] bg-gray-100">
+            <header>
+                <h1 class="text-4xl font-bold text-gray-800">Our Profile</h1>
+            </header>
+
+            <p class="text-gray-600">I'm a student</p>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="text-center h-[400px] bg-gray-100">
+            <heade>
+                <h1 class="text-4xl font-bold text-gray-800">Portfolio</h1>
+            </header>
+            
+            <p class="text-gray-600">I'm a port</p>
+        </section>
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="message-us" class="h-[500px] bg-gray-100">
+            <header>
+                <h1 class="text-4xl font-bold text-gray-800">Message Us</h1>
+            </header>
+
+            <form>
+                <div class="flex flex-col gap-[8px] p-[16px]">
+                    <label for="name" class="text-gray-600">Nama:</label>
+                    <input type="text" id="name" name="name" class="border rounded-[8px] p-[8px]" placeholder="Masukkan nama">
+
+                    <label for="birthdate" class="text-gray-600">Tanggal Lahir:</label>
+                    <input type="date" id="birthdate" name="name" class="border rounded-[8px] p-[8px]">
+
+                    <label>Jenis Kelamin:</label>
+                    <div class="flex gap-[16px]">
+                        <input type="radio" id="laki-laki" name="gender" value="laki-laki">
+                        <label for="laki-laki" class="text-gray-600">Laki-laki</label>
+            
+                        <input type="radio" id="perempuan" name="gender" value="perempuan">
+                        <label for="perempuan" class="text-gray-600">Perempuan</label>
+                    </div>
+                    
+                    <label for="message" class="text-gray-600">Pesan:</label>
+                    <textarea id="message" name="message" class="border rounded-[8px] p-[8px]" rows="4" placeholder="Tulis pesan"></textarea>
+
+                    <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white py-[8px] px-[16px] rounded-[8px] hover:bg-blue-600">Submit</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="flex items-center justify-center p-4 bg-gray-100">
+        <span>&copy; 2025 Portfolio Fatiha. All rights reserved.</span>
+    </footer>
     
     <!-- JS External -->
     <script src="js\script.js"></script>
